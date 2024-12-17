@@ -92,13 +92,6 @@ body {
       .discover1 {
         background: linear-gradient(hsla(0, 0%, 0%, 0.7), rgba(0, 0, 0, 0.7)),
           url(img/item1.avif);
-        background-size: cover;
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
       }
 
       .discover2 {
@@ -107,6 +100,9 @@ body {
             rgba(33, 133, 208, 0.5)
           ),
           url(img/item2.avif);
+      }
+
+      .discoverCard {
         background-size: cover;
         padding: 50px;
         display: flex;
@@ -121,7 +117,7 @@ body {
       display: flex;
       list-style: none;
       padding: 0;
-      margin: 50px 0px 0px 0px;
+      margin: 50px 0 0;
 
       width: 100%;
       li {
@@ -142,22 +138,24 @@ body {
         rgba(33, 133, 208, 0.5)
       ),
       url(img/main_image.avif);
-    box-shadow: 0px 10px rgba(33, 133, 208, 1);
+    box-shadow: 0 10px rgba(33, 133, 208, 1);
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
-    padding: 20px 180px 20px 20px;
     color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.5rem 0;
     @media screen and (max-width: 768px) {
       padding: 20px 20px 20px 20px;
     }
 
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-
     div {
       width: 50%;
+      padding-right: 2rem;
+      h2 {
+        margin-left: -3rem;
+      }
       button {
         background-color: #2185d0;
         color: white;
@@ -175,13 +173,16 @@ body {
       display: flex;
       justify-content: space-around;
       margin-top: 5px;
-      margin-bottom: 0px;
-      padding: 0px;
+      margin-bottom: 0;
+      padding: 0;
       list-style: none;
 
       li {
         padding: 45px;
         width: 30%;
+        address {
+          font-style: normal;
+        }
       }
     }
   }
