@@ -1,12 +1,10 @@
 body {
   margin: 0;
   font-family: "roboto", sans-serif;
-
   img {
     width: 50px;
     height: 50px;
   }
-
   header {
     background-image: linear-gradient(
         to left,
@@ -16,19 +14,16 @@ body {
       url(img/header_image.avif);
     background-size: cover;
     padding-bottom: 10px;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
     nav {
       width: 80%;
       padding: 15px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       #navnar {
         display: flex;
         justify-content: flex-end;
@@ -55,14 +50,12 @@ body {
       color: white;
     }
   }
-
   #features ul {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
-
     li {
       display: flex;
       flex-direction: column;
@@ -71,29 +64,24 @@ body {
       box-sizing: border-box;
       padding: 25px;
     }
-    .featurIcone {
-      align-items: center;
-      background-color: #f0f0ef;
-    }
   }
-
+  .featurIcone {
+    background-color: #f0f0ef;
+  }
   #discover {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
     .discover {
       display: flex;
       justify-content: center;
       margin-top: -50px;
       padding-bottom: 50px;
-
       .discover1 {
         background: linear-gradient(hsla(0, 0%, 0%, 0.7), rgba(0, 0, 0, 0.7)),
           url(img/item1.avif);
       }
-
       .discover2 {
         background: linear-gradient(
             rgba(33, 133, 208, 0.5),
@@ -101,7 +89,6 @@ body {
           ),
           url(img/item2.avif);
       }
-
       .discoverCard {
         background-size: cover;
         padding: 50px;
@@ -130,7 +117,6 @@ body {
       }
     }
   }
-
   section#newsletter {
     background-image: linear-gradient(
         to left,
@@ -149,7 +135,6 @@ body {
     @media screen and (max-width: 768px) {
       padding: 20px 20px 20px 20px;
     }
-
     div {
       width: 50%;
       padding-right: 2rem;
@@ -164,11 +149,9 @@ body {
       }
     }
   }
-
   footer {
     background-color: black;
     color: white;
-
     ul {
       display: flex;
       justify-content: space-around;
@@ -176,7 +159,6 @@ body {
       margin-bottom: 0;
       padding: 0;
       list-style: none;
-
       li {
         padding: 45px;
         width: 30%;
@@ -187,10 +169,15 @@ body {
     }
   }
 }
-
 @media screen and (max-width: 768px) {
+  li {
+    text-align: center;
+  }
   .discover {
     display: flex;
     flex-direction: column;
+    li {
+      text-align: center;
+    }
   }
 }
